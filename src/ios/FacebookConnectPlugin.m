@@ -196,7 +196,7 @@
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
         return;
     }
-
+    [self.loginManager logOut];
     [self loginWithPermissions:permissions withHandler:loginHandler];
 
 }
